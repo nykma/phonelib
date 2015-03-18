@@ -2,7 +2,7 @@ module Phonelib
   # class for parsed phone number, includes validation and formatting methods
   class Phone
     # defining reader methods for class variables
-    attr_reader :original # original phone number passed for parsing
+    attr_reader :original, :national_number # original phone number passed for parsing
 
     # including module that has all phone analyzing methods
     include Phonelib::PhoneAnalyzer
